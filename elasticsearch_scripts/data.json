@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "pageview": {
+      "properties": {
+        "interaction": {
+          "properties": {
+            "atomid": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

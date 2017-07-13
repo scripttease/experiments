@@ -1,0 +1,18 @@
+{
+    "script" : {
+        "inline": "ctx._source.interaction = (ctx._source.interaction) ? [ctx._source.interaction, newinteraction] : [newinteraction]",
+        "params" : {
+            "newinteraction": {
+                "newatomid" : "emma"
+            }
+        }
+    },
+
+    "upsert" : {
+        "interaction": [
+            {
+                "atomid" : "emma"
+            }
+        ]
+    }
+}
